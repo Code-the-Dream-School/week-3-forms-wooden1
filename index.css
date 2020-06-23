@@ -1,4 +1,16 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: #373838;
+}
+.jumbotron{
+  display: block;
+  background-color:#373838;
+  color: #fdfdfd;
+}
+h1{
+  text-align: center;
+}
+hr{
+  color: #fdfdfd;
 }
