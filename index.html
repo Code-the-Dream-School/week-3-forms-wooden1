@@ -51,18 +51,85 @@
                   </div>     
                 </div>
                 
-                <label class="sr-only" for="reserve-phone">Phone Number</label>
-                <span class="input-group-text">
-                  <i src="./icons/phone.svg"></i>
-                </span>
-                <input type="phone" id="reserve-phone" class="form-control" placeholder="Format: 1234567890">
+                
+                <!-- PHONE -->
 
-                <label class="sr-only" for="reserve-email">Email</label>
-                <input type="email" id="reserve-email" class="form-control" placeholder="Email">
+                <div class="form-group col-md-6o">
+                  <div class="input-group mb-2">
+                    <label for="phone number" class="sr-only">phone number</label>
+                    <span class="input-group-prepend badge badge-secondary pt-2">
+                      <img src="./icons/phone.svg" alt="phone number">
+                    </span>
+                    <input type="tel" id="reserve-phone" class="form-control" placeholder="Format: 1234567890">
+                  </div>
+                </div>
 
-                <label class="sr-only" for="reserve-date">Date</label>
-                <input type="date" id="reserver-email" class="form-control">
+                <!-- EMAIL -->
+                <div class="form-group col-md-6o">
+                  <div class="input-group mb-2">
+                    <label class="sr-only" for="reserve-email">Email</label>
+                    <span class="input-group-prepend badge badge-secondary pt-2">
+                      <img src="./icons/email.png" alt="email address" class="img-fluid">
+                    </span>
+                    <input type="email" id="reserve-email" class="form-control" placeholder="Email@Address.com">
+                  </div>
+                </div>
 
+                <!-- DATE -->
+                <div class="form-group col-md-6o">
+                  <div class="input-group mb-2">
+                    <label class="sr-only" for="reserve-date">Date</label>
+                    <span class="input-group-prepend badge badge-secondary pt-2"><img src="./icons/calendar.png" alt="calendar"></span>
+                    <input type="date" id="reserver-date" class="form-control" data-provide="datepicker">
+                  </div>
+                </div>
+                   
+                <div class="row">
+                  <!-- TIME  -->
+                  <div class="col">
+                    <div class="input-group">
+                      <label class="sr-only" for="reserve-name">time</label>
+                      <span class="input-group-prepend badge badge-secondary">
+                        <img src="./icons/clock.svg" alt="set time">
+                      </span>
+                      <select name="time" id="reseve-time">
+                        <!-- import timepicker -->
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- PERSON(s) -->
+                  <div class="col">
+                    <div class="input-group">
+
+                      <label class="sr-only" for="reserve-lastname">person(s)</label>
+                      <span class="badge badge-secondary"><img src="./icons/person.svg" alt="person" class="img-fluid"></span>
+                      <select>
+                        <option value="1 person">1 person</option>
+                        <option value="2 people">2 people</option>
+                        <option value="3 people">3 people</option>
+                        <option value="4 people">4 people</option>
+                        <option value="5 people">5 people</option>
+                        <option value="6 people">6 people</option>
+                        <option value="7 people">7 people</option>
+                        <option value="8 people">8 people</option>
+                        <option value=9 people>9 people</option>
+                        <option value="10 people">10 people</option>
+                        <option value="11 people"> 11 people</option>
+                        <option value="12 people">12 people</option>
+                        <option value="13 people">13 people</option>
+                        <option value="14 people">14 people</option>
+                        <option value="15 people">15 people</option>
+                        <option value="16 people">16 people</option>
+                        <option value="17 people">17 people</option>
+                        <option value="18 people">18 people</option>
+                        <option value="19 people">19 people</option>
+                        <option value="20 people">20 people</option>
+                        
+                      </select>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
             <div class="modal-footer mx-auto">
@@ -103,6 +170,8 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
     </script>
     <script type="text/javascript" src="weather.js"></script>
   </body>
