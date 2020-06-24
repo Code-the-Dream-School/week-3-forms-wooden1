@@ -27,23 +27,46 @@
 
       <!-- MODALS -->
       
-      <!-- Modal -->
+      <!-- RESERVATIONS -->
       <div class="modal fade" id="reservation" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title">Reservation</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
+              <form>
+                <div class="row"> 
+                  <div class="col">
+                    <label class="sr-only" for="reserve-name">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2"id="reserve-name" placeholder="Name">
+                  </div>
+                  <div class="col">
+                    <label class="sr-only" for="reserve-lastname">Last Name</label>
+                    <input type="text" id="reserve-lastname" class="form-control mb-2 mr-sm-2" placeholder="Last Name">
+                  </div>     
+                </div>
+                
+                <label class="sr-only" for="reserve-phone">Phone Number</label>
+                <span class="input-group-text">
+                  <i src="./icons/phone.svg"></i>
+                </span>
+                <input type="phone" id="reserve-phone" class="form-control" placeholder="Format: 1234567890">
+
+                <label class="sr-only" for="reserve-email">Email</label>
+                <input type="email" id="reserve-email" class="form-control" placeholder="Email">
+
+                <label class="sr-only" for="reserve-date">Date</label>
+                <input type="date" id="reserver-email" class="form-control">
+
+              </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-footer mx-auto">
+              <button type="button" class="btn btn-primary">Reserve</button>
             </div>
           </div>
         </div>
