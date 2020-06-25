@@ -1,0 +1,1 @@
+$('[data-target="datepicker"').datepicker('startDate', new Date())

@@ -142,21 +142,75 @@
 
       <div class="modal fade" id="application" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
+              <div class="app-greeting">
+                <p>We are happy that you want to be part of our team</p>
+              </div>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                  <label for="app-name">Name</label>
+                  <input type="text" class="form-control" id="app-name">  
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="app-lastname">last Name</label>
+                    <input type="text" class="form-control" id="app-lastname">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="app-phone">Phone</label>
+                    <input type="tel" class="form-control" id="app-phone" placeholder="Format: 1234567890">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="applied-position">Position</label>
+                    <select id="applied-position" class="form-control">
+                      <option selected>Position</option>
+                      <option>mini boss</option>
+                      <option>boss</option>
+                      <option>big boss</option>
+                    </select>
+                  </div>
+                 
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" id="parttime-radio">
+                    <label class="form-check-label" for="parttime-radio">
+                      Part time
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="fulltime-radio">
+                    <label class="form-check-label" for="fulltime-radio">Full time</label>
+                  </div>
+                </div>
+                <div class="form-row mb-2">
+                  <label for="workplace-skills">What are your workplace skills</label>
+                  <textarea name="workplace-skills" id="workplace-skills" cols="30" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="form-row  mb-4">
+                  <label for="resume-upload">Upload resume and list of references</label>
+                  <input type="file" class="form-control-file p-2" id="resume-upload">
+                </div>
+                <div class="modal-footer mx-auto">
+                  <button type="button" class="btn btn-outline-primary">Send</button>
+              </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -174,5 +228,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
     </script>
     <script type="text/javascript" src="weather.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
